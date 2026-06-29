@@ -1,0 +1,546 @@
+[gd_scene format=4 uid="uid://dtvsk3h3kad72"]
+
+[ext_resource type="Texture2D" uid="uid://ks0wuwncxndb" path="res://assets/images/tileset/Terrain (16x16).png" id="1_md458"]
+[ext_resource type="Script" uid="uid://iwg4wcih7yog" path="res://scenes/levels/base_level.gd" id="1_ukglk"]
+[ext_resource type="PackedScene" uid="uid://be6ogr8vnqxo2" path="res://scenes/Player.tscn" id="2_uk53i"]
+[ext_resource type="Texture2D" uid="uid://beabql4bxkgrk" path="res://assets/images/tileset/alltiles.png" id="3_wwrw0"]
+[ext_resource type="Texture2D" uid="uid://r4k4t06syqqf" path="res://assets/images/level (1).png" id="5_575cj"]
+[ext_resource type="Texture2D" uid="uid://c0auxld4ypdrd" path="res://assets/images/exitn.png" id="6_vtnee"]
+[ext_resource type="Texture2D" uid="uid://ky2xp4bcgbj1" path="res://assets/images/paused.png" id="7_1vfnp"]
+[ext_resource type="Texture2D" uid="uid://dxqpn7fgo3rhm" path="res://assets/images/exitp.png" id="7_w4ycj"]
+[ext_resource type="Texture2D" uid="uid://b43pc12p8stl8" path="res://assets/images/exith.png" id="8_8ohfs"]
+[ext_resource type="AudioStream" uid="uid://b0f106tji7v4w" path="res://assets/dragon-studio-button-press-382713.mp3" id="9_64olr"]
+[ext_resource type="Texture2D" uid="uid://dek0ebpwgs85r" path="res://assets/images/nextn.png" id="9_r6qow"]
+[ext_resource type="Texture2D" uid="uid://c1rlwltotnbfr" path="res://assets/images/resumen.png" id="13_1hcxj"]
+[ext_resource type="Texture2D" uid="uid://df0a55j7m5b2n" path="res://assets/images/resumeboth_0001.png" id="14_1d07b"]
+[ext_resource type="Texture2D" uid="uid://ft0cfekvbuoq" path="res://assets/images/resumeboth_0002.png" id="15_nq73e"]
+[ext_resource type="Texture2D" uid="uid://cyh81cc35xxb4" path="res://assets/images/levels_0006.png" id="16_i5apv"]
+[ext_resource type="Texture2D" uid="uid://f13ad6vnpgmo" path="res://assets/images/reset1.png" id="16_r6qow"]
+[ext_resource type="Texture2D" uid="uid://tspmnvb0fmxw" path="res://assets/images/ahh_0001.png" id="17_1hcxj"]
+[ext_resource type="Texture2D" uid="uid://wkh0hh2l6x2n" path="res://assets/images/next1_0002.png" id="17_ovmjf"]
+[ext_resource type="Texture2D" uid="uid://c5nhr7k0i6ht7" path="res://assets/images/ahh_0002.png" id="18_1d07b"]
+[ext_resource type="Texture2D" uid="uid://dx5pj3q1d85l4" path="res://assets/images/next1_0001.png" id="18_mwefk"]
+[ext_resource type="Texture2D" uid="uid://c2j0qerbfk0qp" path="res://assets/images/cycles (2) (2).png" id="19_1d07b"]
+[ext_resource type="Texture2D" uid="uid://bybckhbsfooem" path="res://assets/images/cycles (2) (1).png" id="20_nq73e"]
+[ext_resource type="Texture2D" uid="uid://dyjbvkbe4rhpe" path="res://assets/images/cycles (1)_0001.png" id="21_64olr"]
+[ext_resource type="Texture2D" uid="uid://cenrvb7jvpomj" path="res://assets/images/cycles (1)_0002.png" id="22_yo52i"]
+[ext_resource type="Texture2D" uid="uid://blujf6exd728j" path="res://assets/images/cycles (3) (2).png" id="23_vada2"]
+[ext_resource type="Texture2D" uid="uid://cle5jocnyko3f" path="res://assets/images/cycles (3) (1).png" id="24_vcyb2"]
+[ext_resource type="Texture2D" uid="uid://c403xh5ihjjgj" path="res://assets/images/pick_0001.png" id="25_gkgjl"]
+[ext_resource type="Texture2D" uid="uid://dchyfallq5tq0" path="res://assets/images/pick.png" id="26_nq73e"]
+[ext_resource type="Texture2D" uid="uid://dtgtunf56pg12" path="res://assets/images/levels_0004.png" id="27_yo52i"]
+[ext_resource type="Texture2D" uid="uid://d3v2q18vkitay" path="res://assets/images/levels_0003.png" id="29_vcyb2"]
+[ext_resource type="AudioStream" uid="uid://cbyjkcaae78e6" path="res://assets/clavier-music-calm-christmas-piano-262888.mp3" id="29_yo52i"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_md458"]
+texture = ExtResource("1_md458")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:0/0 = 0
+10:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+14:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o1chu"]
+texture = ExtResource("3_wwrw0")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_d52np"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_md458")
+sources/1 = SubResource("TileSetAtlasSource_o1chu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_575cj"]
+texture = ExtResource("5_575cj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wwrw0"]
+texture = ExtResource("6_vtnee")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gkgjl"]
+texture = ExtResource("7_w4ycj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7plrf"]
+texture = ExtResource("8_8ohfs")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h4ce7"]
+texture = ExtResource("9_r6qow")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_64olr"]
+texture = ExtResource("17_ovmjf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vcyb2"]
+texture = ExtResource("18_mwefk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_exs80"]
+texture = ExtResource("7_1vfnp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j7gcg"]
+texture = ExtResource("6_vtnee")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vtnee"]
+texture = ExtResource("7_w4ycj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w4ycj"]
+texture = ExtResource("8_8ohfs")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_43bxi"]
+texture = ExtResource("13_1hcxj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8ohfs"]
+texture = ExtResource("14_1d07b")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1hcxj"]
+texture = ExtResource("15_nq73e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r6qow"]
+texture = ExtResource("16_r6qow")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1d07b"]
+texture = ExtResource("17_1hcxj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nq73e"]
+texture = ExtResource("18_1d07b")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r6qow"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1vfnp"]
+texture = ExtResource("19_1d07b")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bqltn"]
+texture = ExtResource("20_nq73e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u2nyb"]
+texture = ExtResource("19_1d07b")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i5apv"]
+texture = ExtResource("21_64olr")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ii06k"]
+texture = ExtResource("22_yo52i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0hr52"]
+texture = ExtResource("21_64olr")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qhwlw"]
+texture = ExtResource("23_vada2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pseyb"]
+texture = ExtResource("24_vcyb2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cnqkx"]
+texture = ExtResource("23_vada2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bd4s6"]
+texture = ExtResource("25_gkgjl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ktxvk"]
+texture = ExtResource("26_nq73e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p5hfi"]
+texture = ExtResource("25_gkgjl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ovmjf"]
+texture = ExtResource("16_i5apv")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0caop"]
+texture = ExtResource("9_r6qow")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mwefk"]
+texture = ExtResource("17_ovmjf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jua6e"]
+texture = ExtResource("18_mwefk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wsjnl"]
+texture = ExtResource("27_yo52i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_30kvp"]
+texture = ExtResource("29_vcyb2")
+
+[node name="LevelRoot" type="Node2D" unique_id=335078694]
+script = ExtResource("1_ukglk")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1263391078]
+texture_filter = 1
+scale = Vector2(4, 4)
+tile_map_data = PackedByteArray("AAAMAAMAAQABAAAAAAAPAAIAAQABAAAAAAAPAAMAAQABAAAAAAAPAAQAAQAAAAAAAAAPAAcAAQAAAAAAAAAQAAcAAQABAAAAAAAMAAcAAQABAAAAAAAOAAcAAQABAAAAAAAFAAQAAQABAAAAAAAFAAcAAQAAAAAAAAAGAAEAAQABAAAAAAAGAAIAAQABAAAAAAAGAAUAAQABAAAAAAAGAAgAAQABAAAAAAAHAAIAAQABAAAAAAAIAAUAAQAAAAAAAAALAAIAAQABAAAAAAALAAUAAQABAAAAAAALAAgAAQABAAAAAAABAAMAAQABAAAAAAACAAMAAQABAAAAAAACAAUAAQABAAAAAAACAAYAAQABAAAAAAACAAcAAQAAAAAAAAACAAgAAQABAAAAAAAIAAMAAQABAAAAAAAIAAIAAQABAAAAAAAIAAEAAQAIAAAAAAAIAAAAAQABAAAAAAAHAAAAAQABAAAAAAAGAAAAAQAAAAAAAAAHAAEAAQAAAAAAAAAJAAAAAQAAAAAAAAAJAAEAAQABAAAAAAAJAAIAAQABAAAAAAAJAAMAAQABAAAAAAAJAAQAAQABAAAAAAAIAAQAAQABAAAAAAAHAAQAAQAAAAAAAAAHAAMAAQAAAAAAAAAGAAMAAQAAAAAAAAAFAAMAAQABAAAAAAAFAAIAAQAAAAAAAAAFAAEAAQABAAAAAAAEAAEAAQAAAAAAAAADAAEAAQAAAAAAAAACAAEAAQABAAAAAAABAAEAAQABAAAAAAABAAAAAQABAAAAAAAAAAAAAQABAAAAAAAAAAEAAQABAAAAAAAAAAIAAQABAAAAAAAAAAMAAQAAAAAAAAAAAAQAAQABAAAAAAAAAAUAAQABAAAAAAAAAAYAAQABAAAAAAAAAAcAAQABAAAAAAAAAAgAAQABAAAAAAAAAAkAAQABAAAAAAABAAkAAQABAAAAAAABAAgAAQAAAAAAAAABAAcAAQABAAAAAAABAAYAAQAAAAAAAAABAAUAAQABAAAAAAABAAQAAQABAAAAAAACAAQAAQAAAAAAAAADAAQAAQABAAAAAAADAAMAAQAAAAAAAAADAAIAAQABAAAAAAACAAIAAQABAAAAAAABAAIAAQAAAAAAAAAEAAIAAQABAAAAAAAEAAMAAQAIAAAAAAAEAAQAAQAAAAAAAAAEAAUAAQABAAAAAAADAAUAAQAAAAAAAAADAAYAAQABAAAAAAADAAcAAQABAAAAAAADAAgAAQABAAAAAAADAAkAAQABAAAAAAACAAkAAQABAAAAAAAEAAcAAQABAAAAAAAEAAYAAQABAAAAAAAFAAYAAQABAAAAAAAGAAYAAQAAAAAAAAAGAAcAAQABAAAAAAAHAAcAAQABAAAAAAAHAAYAAQABAAAAAAAHAAUAAQABAAAAAAAHAAgAAQAAAAAAAAAHAAkAAQABAAAAAAAGAAkAAQAAAAAAAAAFAAgAAQABAAAAAAAJAAgAAQAAAAAAAAAJAAcAAQABAAAAAAAJAAYAAQABAAAAAAAJAAUAAQABAAAAAAAKAAUAAQABAAAAAAAKAAQAAQAAAAAAAAAKAAMAAQABAAAAAAAKAAIAAQABAAAAAAAKAAEAAQAAAAAAAAAKAAAAAQABAAAAAAALAAAAAQABAAAAAAALAAEAAQABAAAAAAAMAAEAAQAAAAAAAAAMAAIAAQABAAAAAAANAAIAAQABAAAAAAANAAEAAQABAAAAAAAOAAEAAQAAAAAAAAAOAAIAAQABAAAAAAAOAAMAAQABAAAAAAANAAMAAQAJAAAAAAANAAQAAQAAAAAAAAAMAAQAAQABAAAAAAALAAQAAQABAAAAAAALAAMAAQAAAAAAAAAMAAUAAQAAAAAAAAAMAAYAAQABAAAAAAALAAYAAQAAAAAAAAAKAAYAAQAAAAAAAAAKAAcAAQABAAAAAAAKAAgAAQABAAAAAAAKAAkAAQAAAAAAAAAJAAkAAQABAAAAAAALAAkAAQAJAAAAAAAMAAkAAQABAAAAAAAMAAgAAQAAAAAAAAANAAgAAQABAAAAAAANAAcAAQAAAAAAAAANAAYAAQABAAAAAAANAAUAAQABAAAAAAAOAAUAAQABAAAAAAAOAAQAAQAAAAAAAAAOAAYAAQAAAAAAAAAPAAYAAQABAAAAAAAPAAUAAQABAAAAAAAQAAYAAQAAAAAAAAARAAYAAQABAAAAAAARAAcAAQABAAAAAAARAAgAAQAAAAAAAAAQAAgAAQABAAAAAAAPAAgAAQABAAAAAAAOAAgAAQABAAAAAAAOAAkAAQABAAAAAAAPAAkAAQAAAAAAAAAQAAkAAQAAAAAAAAARAAkAAQABAAAAAAALAAcAAQAAAAAAAAAPAAEAAQAAAAAAAAAPAAAAAQABAAAAAAAQAAAAAQABAAAAAAAQAAEAAQABAAAAAAAQAAIAAQAAAAAAAAAQAAMAAQABAAAAAAAQAAQAAQAAAAAAAAARAAQAAQABAAAAAAARAAMAAQABAAAAAAARAAIAAQABAAAAAAARAAEAAQABAAAAAAARAAAAAQABAAAAAAAGAAQAAQABAAAAAAAHAAoAAQAAAAAAAAAGAAoAAQAAAAAAAAAFAAoAAQAAAAAAAAAEAAoAAQAAAAAAAAAEAAkAAQAAAAAAAAAEAAgAAQABAAAAAAADAAoAAQAAAAAAAAACAAoAAQAAAAAAAAABAAoAAQAAAAAAAAAAAAoAAQAAAAAAAAD//woAAQAAAAAAAAD//wkAAQAAAAAAAAD//wgAAQAAAAAAAAD//wcAAQAAAAAAAAD//wYAAQAAAAAAAAD//wUAAQAAAAAAAAD//wQAAQAAAAAAAAD//wMAAQAAAAAAAAD//wIAAQAAAAAAAAD//wEAAQAAAAAAAAD//wAAAQAAAAAAAAD/////AQAAAAAAAAAAAP//AQAAAAAAAAABAP//AQAAAAAAAAACAP//AQAAAAAAAAACAAAAAQABAAAAAAADAAAAAQABAAAAAAADAP//AQAAAAAAAAAEAP//AQAAAAAAAAAEAAAAAQABAAAAAAAFAAAAAQABAAAAAAAFAP//AQAAAAAAAAAGAP//AQAAAAAAAAAHAP//AQAAAAAAAAAIAP//AQAAAAAAAAAJAP//AQAAAAAAAAAKAP//AQAAAAAAAAALAP//AQAAAAAAAAAMAP//AQAAAAAAAAAMAAAAAQAAAAAAAAANAAAAAQABAAAAAAANAP//AQAAAAAAAAAOAP//AQAAAAAAAAAOAAAAAQABAAAAAAAPAP//AQAAAAAAAAAQAP//AQAAAAAAAAARAP//AQAAAAAAAAASAP//AQAAAAAAAAASAAAAAQAAAAAAAAASAAEAAQAAAAAAAAASAAIAAQAAAAAAAAASAAMAAQAAAAAAAAASAAQAAQAAAAAAAAASAAUAAQAAAAAAAAARAAUAAQABAAAAAAAQAAUAAQABAAAAAAASAAYAAQAAAAAAAAASAAcAAQAAAAAAAAASAAgAAQAAAAAAAAASAAkAAQAAAAAAAAASAAoAAQAAAAAAAAARAAoAAQAAAAAAAAAQAAoAAQAAAAAAAAAPAAoAAQAAAAAAAAAOAAoAAQAAAAAAAAANAAoAAQAAAAAAAAANAAkAAQABAAAAAAAMAAoAAQAAAAAAAAALAAoAAQAAAAAAAAAKAAoAAQAAAAAAAAAJAAoAAQAAAAAAAAAIAAoAAQAAAAAAAAAIAAYAAQAAAAAAAAAIAAcAAQAAAAAAAAAIAAgAAQABAAAAAAAIAAkAAQABAAAAAAAFAAUAAQAAAAAAAAAFAAkAAQABAAAAAAA=")
+tile_set = SubResource("TileSet_d52np")
+
+[node name="Player" parent="." unique_id=371006448 instance=ExtResource("2_uk53i")]
+position = Vector2(352, 608)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=282684504]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1790068033]
+visible = false
+texture_filter = 1
+offset_left = 426.0
+offset_top = 101.0
+offset_right = 762.0
+offset_bottom = 533.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_575cj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Return" type="Button" parent="CanvasLayer/Panel" unique_id=1254563062]
+texture_filter = 1
+layout_mode = 0
+offset_left = 87.0
+offset_top = 275.0
+offset_right = 252.0
+offset_bottom = 323.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_wwrw0")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_gkgjl")
+theme_override_styles/hover = SubResource("StyleBoxTexture_7plrf")
+text = "
+"
+
+[node name="Next" type="Button" parent="CanvasLayer/Panel" unique_id=811635708]
+texture_filter = 1
+layout_mode = 0
+offset_left = 84.0
+offset_top = 197.0
+offset_right = 249.0
+offset_bottom = 245.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_h4ce7")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_64olr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_vcyb2")
+text = "
+"
+
+[node name="PausePanel" type="Panel" parent="CanvasLayer" unique_id=1719826344]
+visible = false
+texture_filter = 1
+offset_left = 426.0
+offset_top = 103.0
+offset_right = 762.0
+offset_bottom = 535.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_exs80")
+
+[node name="Return" type="Button" parent="CanvasLayer/PausePanel" unique_id=614794572]
+texture_filter = 1
+layout_mode = 0
+offset_left = 92.0
+offset_top = 269.0
+offset_right = 257.0
+offset_bottom = 317.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_j7gcg")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vtnee")
+theme_override_styles/hover = SubResource("StyleBoxTexture_w4ycj")
+
+[node name="Resume" type="Button" parent="CanvasLayer/PausePanel" unique_id=250737410]
+texture_filter = 1
+layout_mode = 0
+offset_left = 93.0
+offset_top = 209.0
+offset_right = 258.0
+offset_bottom = 257.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_43bxi")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_8ohfs")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1hcxj")
+
+[node name="Reset" type="Button" parent="CanvasLayer/PausePanel" unique_id=272161031]
+texture_filter = 1
+layout_mode = 0
+offset_left = 91.0
+offset_top = 151.0
+offset_right = 256.0
+offset_bottom = 199.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_r6qow")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_1d07b")
+theme_override_styles/hover = SubResource("StyleBoxTexture_nq73e")
+
+[node name="ColorPanel" type="Panel" parent="CanvasLayer" unique_id=1764757489]
+visible = false
+texture_filter = 1
+offset_left = 398.065
+offset_top = 136.0
+offset_right = 784.065
+offset_bottom = 522.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_r6qow")
+
+[node name="Red" type="Button" parent="CanvasLayer/ColorPanel" unique_id=882071339]
+texture_filter = 1
+layout_mode = 0
+offset_left = 35.934998
+offset_top = 227.0
+offset_right = 63.934998
+offset_bottom = 240.0
+scale = Vector2(11, 11)
+theme_override_styles/normal = SubResource("StyleBoxTexture_1vfnp")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_bqltn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_u2nyb")
+toggle_mode = true
+
+[node name="Blue" type="Button" parent="CanvasLayer/ColorPanel" unique_id=939232533]
+texture_filter = 1
+layout_mode = 0
+offset_left = 188.935
+offset_top = 8.0
+offset_right = 205.935
+offset_bottom = 31.0
+scale = Vector2(11, 11)
+theme_override_styles/normal = SubResource("StyleBoxTexture_i5apv")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ii06k")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0hr52")
+toggle_mode = true
+
+[node name="Yellow" type="Button" parent="CanvasLayer/ColorPanel" unique_id=2045993033]
+texture_filter = 1
+layout_mode = 0
+offset_left = 2.9349976
+offset_top = 8.0
+offset_right = 19.934998
+offset_bottom = 31.0
+scale = Vector2(11, 11)
+theme_override_styles/normal = SubResource("StyleBoxTexture_qhwlw")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_pseyb")
+theme_override_styles/hover = SubResource("StyleBoxTexture_cnqkx")
+toggle_mode = true
+
+[node name="Mix" type="Button" parent="CanvasLayer/ColorPanel" unique_id=427012100]
+texture_filter = 1
+layout_mode = 0
+offset_left = 101.935
+offset_top = 96.0
+offset_right = 118.935
+offset_bottom = 113.0
+scale = Vector2(11, 11)
+theme_override_styles/normal = SubResource("StyleBoxTexture_bd4s6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ktxvk")
+theme_override_styles/hover = SubResource("StyleBoxTexture_p5hfi")
+
+[node name="Map" type="Panel" parent="CanvasLayer" unique_id=1210648605]
+texture_filter = 1
+offset_left = 288.0
+offset_top = 162.0
+offset_right = 928.0
+offset_bottom = 522.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ovmjf")
+
+[node name="Continue" type="Button" parent="CanvasLayer/Map" unique_id=1570682874]
+texture_filter = 1
+layout_mode = 0
+offset_left = 447.0
+offset_top = 365.0
+offset_right = 612.0
+offset_bottom = 413.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_0caop")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_mwefk")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jua6e")
+
+[node name="Map2" type="Panel" parent="CanvasLayer" unique_id=1928321329]
+texture_filter = 1
+offset_left = 288.0
+offset_top = 162.0
+offset_right = 928.0
+offset_bottom = 522.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_wsjnl")
+
+[node name="Continue" type="Button" parent="CanvasLayer/Map2" unique_id=2026092323]
+texture_filter = 1
+layout_mode = 0
+offset_left = 447.0
+offset_top = 365.0
+offset_right = 612.0
+offset_bottom = 413.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_0caop")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_mwefk")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jua6e")
+
+[node name="Map3" type="Panel" parent="CanvasLayer" unique_id=532323824]
+texture_filter = 1
+offset_left = 288.0
+offset_top = 162.0
+offset_right = 928.0
+offset_bottom = 522.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_30kvp")
+
+[node name="Continue" type="Button" parent="CanvasLayer/Map3" unique_id=765385311]
+texture_filter = 1
+layout_mode = 0
+offset_left = 447.0
+offset_top = 365.0
+offset_right = 612.0
+offset_bottom = 413.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_0caop")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_mwefk")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jua6e")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1736685659]
+stream = ExtResource("9_64olr")
+
+[node name="BG" type="AudioStreamPlayer2D" parent="." unique_id=319329507]
+stream = ExtResource("29_yo52i")
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="CanvasLayer/Panel/Return" to="." method="_on_return_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel/Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="CanvasLayer/PausePanel/Return" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="CanvasLayer/PausePanel/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/PausePanel/Reset" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="CanvasLayer/ColorPanel/Red" to="." method="_on_red"]
+[connection signal="pressed" from="CanvasLayer/ColorPanel/Blue" to="." method="_on_blue"]
+[connection signal="pressed" from="CanvasLayer/ColorPanel/Yellow" to="." method="_on_yellow"]
+[connection signal="pressed" from="CanvasLayer/ColorPanel/Mix" to="." method="_on_mix"]
+[connection signal="pressed" from="CanvasLayer/Map/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="CanvasLayer/Map2/Continue" to="." method="_on_continue2_pressed"]
+[connection signal="pressed" from="CanvasLayer/Map3/Continue" to="." method="_on_continue3_pressed"]

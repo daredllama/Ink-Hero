@@ -1,0 +1,345 @@
+[gd_scene format=3 uid="uid://pc8x8ott02iu"]
+
+[ext_resource type="Script" uid="uid://cv5vjjcalmvns" path="res://scripts/control.gd" id="1_5p55f"]
+[ext_resource type="Texture2D" uid="uid://chkjay64omxgj" path="res://assets/images/menuani.png" id="2_tjwpk"]
+[ext_resource type="Texture2D" uid="uid://c8k6ojo8maklu" path="res://assets/images/untitled (7).png" id="3_lpubu"]
+[ext_resource type="Texture2D" uid="uid://10gxdudm4i88" path="res://assets/images/play.png" id="3_tjwpk"]
+[ext_resource type="Texture2D" uid="uid://cd2w7ywcqrjkg" path="res://assets/images/rest_0006.png" id="4_lpubu"]
+[ext_resource type="Texture2D" uid="uid://3t4o287mtow4" path="res://assets/images/helpp.png" id="5_kql7n"]
+[ext_resource type="Texture2D" uid="uid://bpjewxrv7r5c1" path="res://assets/images/playp.png" id="6_1p5nq"]
+[ext_resource type="Texture2D" uid="uid://bco025loi6ik8" path="res://assets/images/helpp (1).png" id="6_tac8f"]
+[ext_resource type="Texture2D" uid="uid://b1x5oxd366p5k" path="res://assets/images/playh.png" id="7_hob4j"]
+[ext_resource type="Texture2D" uid="uid://c0auxld4ypdrd" path="res://assets/images/exitn.png" id="10_kql7n"]
+[ext_resource type="Texture2D" uid="uid://dxqpn7fgo3rhm" path="res://assets/images/exitp.png" id="11_6pn8l"]
+[ext_resource type="Texture2D" uid="uid://b43pc12p8stl8" path="res://assets/images/exith.png" id="12_0jf8d"]
+[ext_resource type="Texture2D" uid="uid://cd75vjdg6ksar" path="res://assets/images/tut_0004.png" id="13_mmsp5"]
+[ext_resource type="AudioStream" uid="uid://b0f106tji7v4w" path="res://assets/dragon-studio-button-press-382713.mp3" id="13_vb5ih"]
+[ext_resource type="AudioStream" uid="uid://t1tgpjal4c4u" path="res://assets/soundgallerybydmitrytaras-christmas-438153.mp3" id="14_6pn8l"]
+[ext_resource type="Texture2D" uid="uid://dek0ebpwgs85r" path="res://assets/images/nextn.png" id="14_an0t8"]
+[ext_resource type="Texture2D" uid="uid://wkh0hh2l6x2n" path="res://assets/images/next1_0002.png" id="15_db4rb"]
+[ext_resource type="Texture2D" uid="uid://dx5pj3q1d85l4" path="res://assets/images/next1_0001.png" id="16_6uaey"]
+[ext_resource type="Texture2D" uid="uid://crq0wm1txsxnh" path="res://assets/images/tut_0003.png" id="17_sej5b"]
+[ext_resource type="Texture2D" uid="uid://bjqio13151xt6" path="res://assets/images/tut_0002.png" id="18_ehb43"]
+[ext_resource type="Texture2D" uid="uid://ojg6q01cuyct" path="res://assets/images/tut_0001.png" id="19_ednal"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lpubu"]
+atlas = ExtResource("2_tjwpk")
+region = Rect2(0, 0, 1152, 648)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lt2xq"]
+atlas = ExtResource("2_tjwpk")
+region = Rect2(1152, 0, 1152, 648)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1p5nq"]
+atlas = ExtResource("2_tjwpk")
+region = Rect2(2304, 0, 1152, 648)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hob4j"]
+atlas = ExtResource("2_tjwpk")
+region = Rect2(3456, 0, 1152, 648)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01bab"]
+atlas = ExtResource("2_tjwpk")
+region = Rect2(4608, 0, 1152, 648)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_exs80"]
+atlas = ExtResource("2_tjwpk")
+region = Rect2(5760, 0, 1152, 648)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kql7n"]
+atlas = ExtResource("2_tjwpk")
+region = Rect2(6912, 0, 1152, 648)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tac8f"]
+atlas = ExtResource("2_tjwpk")
+region = Rect2(8064, 0, 1152, 648)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vb5ih"]
+atlas = ExtResource("2_tjwpk")
+region = Rect2(9216, 0, 1152, 648)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6pn8l"]
+atlas = ExtResource("2_tjwpk")
+region = Rect2(10368, 0, 1152, 648)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jf8d"]
+atlas = ExtResource("2_tjwpk")
+region = Rect2(11520, 0, 1152, 648)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_apcft"]
+atlas = ExtResource("2_tjwpk")
+region = Rect2(12672, 0, 1152, 648)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8n18e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lpubu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lt2xq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1p5nq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hob4j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01bab")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_exs80")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kql7n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tac8f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vb5ih")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6pn8l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0jf8d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_apcft")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lpubu"]
+texture = ExtResource("3_lpubu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1vfnp"]
+texture = ExtResource("4_lpubu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kql7n"]
+texture = ExtResource("5_kql7n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tac8f"]
+texture = ExtResource("6_tac8f")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bd4s6"]
+texture = ExtResource("3_tjwpk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lt2xq"]
+texture = ExtResource("6_1p5nq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1p5nq"]
+texture = ExtResource("7_hob4j")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i5apv"]
+texture = ExtResource("10_kql7n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vb5ih"]
+texture = ExtResource("11_6pn8l")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_exs80"]
+texture = ExtResource("12_0jf8d")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vtdjg"]
+texture = ExtResource("13_mmsp5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dbpla"]
+texture = ExtResource("14_an0t8")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jvsak"]
+texture = ExtResource("15_db4rb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6e1ab"]
+texture = ExtResource("16_6uaey")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m8muk"]
+texture = ExtResource("17_sej5b")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5oal7"]
+texture = ExtResource("14_an0t8")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xn8ni"]
+texture = ExtResource("15_db4rb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_70q1y"]
+texture = ExtResource("16_6uaey")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_skpox"]
+texture = ExtResource("18_ehb43")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2si0q"]
+texture = ExtResource("14_an0t8")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sdrok"]
+texture = ExtResource("15_db4rb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ffuvu"]
+texture = ExtResource("16_6uaey")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b4oan"]
+texture = ExtResource("19_ednal")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d52np"]
+texture = ExtResource("14_an0t8")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p4kmb"]
+texture = ExtResource("15_db4rb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8jv3w"]
+texture = ExtResource("16_6uaey")
+
+[node name="Control" type="Control" unique_id=1235193190]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5p55f")
+
+[node name="TextureRect" type="AnimatedSprite2D" parent="." unique_id=692597228]
+position = Vector2(576, 324)
+sprite_frames = SubResource("SpriteFrames_8n18e")
+autoplay = "default"
+frame_progress = 0.3995812
+
+[node name="Panel" type="Panel" parent="TextureRect" unique_id=872917486]
+texture_filter = 1
+offset_left = 248.0
+offset_top = -133.0
+offset_right = 538.0
+offset_bottom = 221.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_lpubu")
+
+[node name="Help" type="Button" parent="TextureRect/Panel" unique_id=437616639]
+texture_filter = 1
+layout_mode = 0
+offset_left = 69.0
+offset_top = 147.0
+offset_right = 234.0
+offset_bottom = 195.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_1vfnp")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_kql7n")
+theme_override_styles/hover = SubResource("StyleBoxTexture_tac8f")
+
+[node name="Play" type="Button" parent="TextureRect/Panel" unique_id=571228850]
+texture_filter = 1
+layout_mode = 0
+offset_left = 69.0
+offset_top = 50.0
+offset_right = 234.0
+offset_bottom = 98.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_bd4s6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lt2xq")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1p5nq")
+
+[node name="Exit" type="Button" parent="TextureRect/Panel" unique_id=383439974]
+texture_filter = 1
+layout_mode = 0
+offset_left = 69.0
+offset_top = 248.0
+offset_right = 234.0
+offset_bottom = 296.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_i5apv")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vb5ih")
+theme_override_styles/hover = SubResource("StyleBoxTexture_exs80")
+
+[node name="Panel2" type="Panel" parent="TextureRect" unique_id=649584000]
+visible = false
+texture_filter = 1
+offset_left = -318.0
+offset_top = -196.0
+offset_right = 322.0
+offset_bottom = 164.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_vtdjg")
+
+[node name="Next3" type="Button" parent="TextureRect/Panel2" unique_id=1292845829]
+texture_filter = 1
+layout_mode = 0
+offset_left = 260.0
+offset_top = 370.0
+offset_right = 425.0
+offset_bottom = 418.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_dbpla")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_jvsak")
+theme_override_styles/hover = SubResource("StyleBoxTexture_6e1ab")
+
+[node name="Panel3" type="Panel" parent="TextureRect" unique_id=1734188606]
+visible = false
+texture_filter = 1
+offset_left = -318.0
+offset_top = -196.0
+offset_right = 322.0
+offset_bottom = 164.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_m8muk")
+
+[node name="Next2" type="Button" parent="TextureRect/Panel3" unique_id=24524538]
+texture_filter = 1
+layout_mode = 0
+offset_left = 261.0
+offset_top = 369.0
+offset_right = 426.0
+offset_bottom = 417.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_5oal7")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_xn8ni")
+theme_override_styles/hover = SubResource("StyleBoxTexture_70q1y")
+
+[node name="Panel4" type="Panel" parent="TextureRect" unique_id=1015219346]
+visible = false
+texture_filter = 1
+offset_left = -319.0
+offset_top = -195.0
+offset_right = 321.0
+offset_bottom = 165.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_skpox")
+
+[node name="Next1" type="Button" parent="TextureRect/Panel4" unique_id=706129751]
+texture_filter = 1
+layout_mode = 0
+offset_left = 261.0
+offset_top = 369.0
+offset_right = 426.0
+offset_bottom = 417.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_2si0q")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_sdrok")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ffuvu")
+
+[node name="Panel5" type="Panel" parent="TextureRect" unique_id=1326239045]
+visible = false
+texture_filter = 1
+offset_left = -319.0
+offset_top = -197.0
+offset_right = 321.0
+offset_bottom = 163.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_b4oan")
+
+[node name="Next" type="Button" parent="TextureRect/Panel5" unique_id=450769975]
+texture_filter = 1
+layout_mode = 0
+offset_left = 262.0
+offset_top = 371.0
+offset_right = 427.0
+offset_bottom = 419.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_d52np")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_p4kmb")
+theme_override_styles/hover = SubResource("StyleBoxTexture_8jv3w")
+
+[node name="Click" type="AudioStreamPlayer2D" parent="." unique_id=1504337715]
+stream = ExtResource("13_vb5ih")
+
+[node name="BG" type="AudioStreamPlayer2D" parent="." unique_id=2057980412]
+stream = ExtResource("14_6pn8l")
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="TextureRect/Panel/Help" to="." method="_on_help_pressed"]
+[connection signal="pressed" from="TextureRect/Panel/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="TextureRect/Panel/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="TextureRect/Panel2/Next3" to="." method="_on_next3_pressed"]
+[connection signal="pressed" from="TextureRect/Panel3/Next2" to="." method="_on_next2_pressed"]
+[connection signal="pressed" from="TextureRect/Panel4/Next1" to="." method="_on_next1_pressed"]
+[connection signal="pressed" from="TextureRect/Panel5/Next" to="." method="_on_next_pressed"]
